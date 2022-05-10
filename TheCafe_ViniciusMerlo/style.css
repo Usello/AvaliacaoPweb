@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ 
+
+.topnav{
+    display: flex;
+	justify-content: space-around;
+    color: #fff;
+    background-color: #000000;
+    padding: 20px;
+}
+
+.imagem{
+    display: flex;
+    justify-content: center;
+    background-size: cover;
+    background:url('images/coffeehouse.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+}
