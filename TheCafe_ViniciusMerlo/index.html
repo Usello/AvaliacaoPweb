@@ -1,67 +1,148 @@
+<!-- Vinícius Gabriel Merlo Informática III -->
+
 <!DOCTYPE html>
-<br>
-
+<html>
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>Avl</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
+<title>The Cafe</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
 </head>
+<body>
 
-
-<div class="topnav">
-    <div class='home'>HOME</div>
-    <div class='about'>ABOUT</div>
-    <div class='menu'>MENU</div>
+<div class="navbar">
+  <div class=" padding-container F">
+    <div class="itens t1">
+      <a href="#" class="botao V F">HOME</a>
+    </div>
+    <div class="itens t1">
+      <a href="#about" class="botao V F">ABOUT</a>
+    </div>
+    <div class="itens t1">
+      <a href="#menu" class="botao V F">MENU</a>
+    </div>
+    <div class="itens t1">
+      <a href="#where" class="botao V F">WHERE</a>
+    </div>
   </div>
+</div>
 
-<img src="images/coffeehouse.jpg" width="1920">
-<h1>The Cafe</h1>
- <h1>About the cafe</h1>
+<header class="fundo w3-display-container cinza-claro">
+  <div class="abaixo centro padding-container-0 w3-hide-small">
+    <span class="bgText">Open from 6am to 5pm</span>
+  </div>
+  <div class="meio centro">
+    <span class="branco" style="font-size:90px">the<br>Cafe</span>
+  </div>
+  <div class="abaixo2 centro padding-container-0">
+    <span class="branco">15 Adr street, 5015</span>
+  </div>
+</header>
 
- <p>primeiro texto</p>
-
- <div class="italico">
-     <p>Textos que ficaram em caixas e itálicos</p>
- </div>
-
- <img src="images/coffeeshop.jpg">
- <h2>Horário de abertura:</h2>
- <p>texto do horário de abertura</p>
+<div class="amarelo cinza footer">
 </br>
-<h2>Endereço:</h2>
-<p>Endereço do lugar</p>
-
-<h1>O MENU</h1>
-
-<p>Área destinada ao menu</p>
-
-<img src="images/coffeehouse2.jpg">
-<h1>WHERE TO FIND US</h1>
-
-<p>texto</p>
-
-<img src="images/map.jpg">
-<p>TExt1</p>
-<p>TEXT@</p>
-
-<form  method="post">
-    <div>
-        <label for="nome">Nome:</label>
-        <input type="text" id="nome" />
+<div class="container">
+  <div class="conteudo" style="max-width:700px">
+    <h5 class="centro padding-container-1"><span class="bgText space">ABOUT THE CAFE</span></h5>
+	</br>
+    <p>The Cafe was founded in blabla by Mr. Smith in lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    <p>In addition to our full espresso and brew bar menu, we serve fresh made-to-order breakfast and lunch sandwiches, as well as a selection of sides and salads and other good stuff.</p>
+    <div class="painel leftbar w3-light-grey">
+      <p><i>"Use products from nature for what it's worth - but never too early, nor too late." Fresh is the new sweet.</i></p>
+      <p>Chef, Coffeeist and Owner: Liam Brown</p>
     </div>
-    <div>
-        <label for="email">E-mail:</label>
-        <input type="email" id="email" />
-    </div>
-    <div>
-        <label for="msg">Mensagem:</label>
-        <textarea id="msg"></textarea>
-    </div>
-    <button> Enviar</button>
-</form>
+		</br>
+    <img src="images/coffeeshop.jpg" style="width:100%;max-width:1000px">
+		</br>
+		</br>
+    <p><strong>Opening hours:</strong> everyday from 6am to 5pm.</p>
+		</br>
+    <p><strong>Address:</strong> 15 Adr street, 5015, NY</p>
+		</br>
+  </div>
+</div>
 
-<form></form>
+<div class="container" id="menu">
+  <div class="conteudo" style="max-width:700px">
+ 
+    <h5 class="centro padding-container-2"><span class="bgText space">THE MENU</span></h5>
+  
+    <div class="centro box1 padding-container">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Eat');" id="myLink">
+        <div class="itens t2 tablink">Eat</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Drinks');">
+        <div class="itens t2 tablink">Drink</div>
+      </a>
+    </div>
 
+    <div id="Eat" class="container menu padding-container-2 box1">
+      <h5>Bread Basket</h5>
+      <p class="texto-cinza">Assortment of fresh baked fruit breads and muffins 5.50</p><br>
+    
+      <h5>Honey Almond Granola with Fruits</h5>
+      <p class="texto-cinza">Natural cereal of honey toasted oats, raisins, almonds and dates 7.00</p><br>
+    
+      <h5>Belgian Waffle</h5>
+      <p class="texto-cinza">Vanilla flavored batter with malted flour 7.50</p><br>
+    
+      <h5>Scrambled eggs</h5>
+      <p class="texto-cinza">Scrambled eggs, roasted red pepper and garlic, with green onions 7.50</p><br>
+    
+      <h5>Blueberry Pancakes</h5>
+      <p class="texto-cinza">With syrup, butter and lots of berries 8.50</p>
+    </div>
+
+    <div id="Drinks" class="container menu padding-container-2 box1">
+      <h5>Coffee</h5>
+      <p class="texto-cinza">Regular coffee 2.50</p><br>
+    
+      <h5>Chocolato</h5>
+      <p class="texto-cinza">Chocolate espresso with milk 4.50</p><br>
+    
+      <h5>Corretto</h5>
+      <p class="texto-cinza">Whiskey and coffee 5.00</p><br>
+    
+      <h5>Iced tea</h5>
+      <p class="texto-cinza">Hot tea, except not hot 3.00</p><br>
+    
+      <h5>Soda</h5>
+      <p class="texto-cinza">Coke, Sprite, Fanta, etc. 2.50</p>
+    </div>  
+    <img src="images/coffeehouse2.jpg" style="width:100%;max-width:1000px;margin-top:32px;">
+  </div>
+</div>
+
+
+<div class="container" style="padding-bottom:32px;">
+  <div class="conteudo" style="max-width:700px">
+    <h5 class="centro padding-container-2"><span class="bgText space">WHERE TO FIND US</span></h5>
+    <p>Find us at some address at some place.</p>
+    <img src="images/map.jpg" style="width:100%">
+		</br>
+		</br>
+    <p><span class="bgText">FYI!</span> We offer full-service catering for any event, large or small. We understand your needs and we will cater the food to satisfy the biggerst criteria of them all, both look and taste.</p>
+	</br>
+    <p><strong>Reserve</strong> a table, ask for today's special or just send us a message:</p>
+			</br>
+    <form action="/action_page.php" target="_blank">
+      <p><input class="inputstyle padding-container-4 borda" type="text" placeholder="Name" ></p>
+		</br>
+      <p><input class="inputstyle padding-container-4 borda" type="number" placeholder="How many people" ></p>
+			</br>
+      <p><input class="inputstyle padding-container-4 borda" type="datetime-local" placeholder="Date and time" value="2020-11-16T20:00"></p>
+			</br>
+      <p><input class="inputstyle padding-container-4 borda" type="text" placeholder="Message \ Special requirements"></p>
+			</br>
+      <p><button class="botao F" type="submit">SEND MESSAGE</button></p>
+    </form>
+  </div>
+</div>
+</div>
+
+<footer class="centro padding-container-2 footer">
+  <p>Powered by w3.css</p>
+</footer>
+<script src="script.js"></script>
 </body>
 </html>
